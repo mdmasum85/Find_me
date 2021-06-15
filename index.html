@@ -1,0 +1,1700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" href="sad.jpg" type="" />
+  <!--    css        -->
+<style type="text/css" media="all">
+  *{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: url('back4.jpg');
+}
+img {
+  width: 100px;
+  height: auto;
+  border-radius: 50px;
+  background: #fff;
+  border: 1px solid #00fdff;
+}
+.mobile_area {
+  margin-top: 2px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, 2%);
+}
+.info_input {
+  text-align: center;
+  align-content: center;
+  background: #fff;
+  width: 350px;
+  border-radius: 10px;
+  z-index: 66;
+  border: 1px solid #62b6fe;
+  display: none;
+  overflow: hidden;
+}
+.info_input_mid form{
+  text-align: center;
+  
+}
+.info_input h1 {
+  background: #62b6fe;
+  width: 100%;
+  color: #fff;
+  font-size: 20px;
+}
+.info_input h3 {
+position: absolute;
+  font-size: 20px;
+  top: 32%;
+  right: 30%;
+}
+.info_input img {
+  margin: 5px;
+}
+.info_input_mid input {
+  width: 300px;
+  height: 30px;
+  text-align: center;
+  font-size: 30px;
+  padding: 3px ;
+  margin: 5px;
+  border-radius: 5px;
+  color:#62b6fe;
+  outline: none;
+  border: 1px solid #62b6fe;
+}
+.info_input_mid button {
+  text-align: center;
+  font-size: 30px;
+  padding: 10px 20px;
+  margin: 10px;
+  border-radius: 30px;
+  color: #fff;
+  font-weight: bolder;
+  background: #62b6fe;
+  border: 1px solid #00fdff;
+}
+
+
+.all_section {
+  
+  background: #fff;
+  border-radius: 10px;
+  border: 1px solid red;
+  display: none;
+  animation: pp 0.7s ease forwards;
+}
+@keyframes pp {
+  0%{
+    position: relative;
+    right: -400px;
+  }
+  20%{
+    position: relative;
+    top: -400px;
+  }
+  100%{
+    position: relative;
+    top: 0;
+  }
+}
+.all_section section  {
+  display: flex;
+  margin-bottom: 1px;
+}
+.all_section section img {
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  border: 1px solid red;
+  margin: 1px;
+  transition: 0.3s;
+  background: none;
+}
+.all_section section img:hover {
+ border-radius: 50px;
+}
+.under_score {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  background: #00fdff;
+  height: 30px;
+  border-radius: 10px 10px 0 0;
+  
+}
+.under_score h1 {
+  margin: 2px;
+
+}
+.under_score h1 span {
+  color: #fff;
+}
+.label {
+  background: ;
+  border-radius: 10px;
+  margin-top: 90px;
+  width: 350px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  border: 2px solid red;
+  overflow: hidden;
+  display: none;
+  animation: labal 1s ease forwards;
+}
+@keyframes labal {
+  0% {
+    position: relative;
+    top: -800px;
+  }
+  100%{
+    position: relative;
+    top: 0;
+  }
+}
+.lbl_div {
+  text-align: center;
+  font-size: 10px;
+  font-family: Georgia;
+  color: red;
+}
+
+
+.show_labal {
+  display: block;
+  background: red;
+}
+.show_labal h1 {
+  font-size: 30px;
+  color: #fff;
+}
+.section {
+  display: block;
+}
+.section section {
+display: flex;
+margin: 10px;
+justify-content: space-around;
+}
+.section section span{
+  padding: 15px 30px 15px 30px;
+  box-sizing: border-box;
+  font-size: 35px;
+  margin: 5px;
+  color: #fff;
+  font-weight: bolder;
+  border-radius: 10px;
+  background: red;
+  
+}
+.section1 {
+  margin-top: 5px;
+}
+.section section span:hover {
+  color: red;
+  background: #fff;
+  border: 0.2px solid red;
+}
+.btn_board {
+  display: flex;
+  justify-content: space-around;
+  margin: 5px;
+  
+}
+.btn_board::after {
+  content: "";
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 1px;
+  background: red;
+}
+
+.btn_board button {
+  font-size: 25px;
+  font-weight: 500;
+  padding: 5px 15px;
+  border-radius: 20px;
+  background: none;
+  color: red;
+  margin: 5px 0;
+  margin-bottom: 0;
+  border: 2px solid red;
+  transition: 1s ease;
+}
+
+
+.again , .quiet {
+  display: none;
+}
+
+
+.info_box {
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  background: #fff;
+  border-radius: 10px;
+  border: 2px solid #62b6fe;
+  width: 350px;
+  color:#62b6fe;
+  display: none;
+  margin-top: 40px;
+  animation: pp 0.7s ease forwards;
+}
+.info_box img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50px;
+
+}
+
+.info_box h1 {
+  margin: 5px;
+}
+.info_box h1:first-child {
+  color: red;
+}
+.info_box h1 span {
+  color: red;
+}
+.info_box button {
+  font-size: 30px;
+  padding: 5px 20px;
+  border-radius: 30px;
+  color:#fff;
+  background: red;
+  outline: none;
+  border: none;
+  margin: 10px;
+  font-weight: bolder;
+  animation: gg 1s ease infinite;
+}
+@keyframes gg {
+  0%{
+    background: rgb(0,255,227);
+  }
+ 
+  50%{
+    background: green;
+  }
+  100%{
+    background: rgb(0,255,227);
+  }
+}
+.info_box button span {
+  font-size: 15px;
+}
+
+.result_box {
+  width: 350px;
+  display: block;
+  border: 2px solid #62b6fe;
+  text-align: center;
+  border-radius: 20px;
+  background: #fff;
+  margin-top: 40px;
+  display: none;
+  animation: pp 0.7s ease forwards;
+}
+
+
+.user_info img {
+  width: 100px;
+  height: auto;
+  border-radius: 50px;
+  background: ;
+  margin: 10px;
+  border: 1px solid #00fdff;
+}
+.user_info h1 {
+  font-size: 20px;
+  color: red;
+}
+
+.score_text h2{
+  font-size: 30px;
+  margin: 5px;
+  color: #62b6fe;
+}
+.score_text h1 {
+  color:  #62b6fe; 
+}
+.score_text h1 span {
+  color: #00fdff;
+}
+.result_btn {
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.result_btn button {
+  padding: 8px 15px;
+  font-size: 25px;
+  font-weight: bolder;
+  border-radius: 30px;
+  outline: none;
+  border: 2px solid #00fdff;
+  margin: 5px;
+  margin-bottom: 5px;
+  color: #00fdff;
+  background: ;
+}
+.result_btn button:hover {
+  color: #fff;
+  background: #00fdff;
+}
+.count {
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  text-align: center;
+  font-size: 200px;
+  display: none;
+  z-index: 9;
+}
+
+
+.slider_user_info {
+  position: absolute;
+  background: #fff;
+  border: 1px solid red;
+  border-radius: 5px;
+  top: -500px;
+  right: 0;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  z-index: 99;
+  transition: 0.7s;
+ opacity: 0;
+}
+.slider_user_info h1 {
+  font-size: 30px;
+  margin: 5px;
+  color: #00fdff;
+}
+.slider_user_info input {
+  padding: 10px 20px ;
+  font-size: 25px;
+  font-weight: bolder;
+  color: #fff;
+  background: #00fdff;
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  margin: 10px;
+  margin-top: 0;
+  
+}
+.act {
+  position: absolute;
+  opacity: 1;
+  top: 0;
+ 
+}
+
+.slider_user_info section {
+  margin-top: 20px;
+  
+}
+.img_click {
+  position: absolute;
+  width: 50px;
+  right: 0;
+  top: -5px;
+  z-index: 5;
+  height: auto;
+  transition: 0.8s;
+  display: none;
+  animation: imgk 0.8s ease forwards;
+}
+.active {
+  position: absolute;
+  animation: imgk2 2s ease infinite;
+}
+.img_click:hover {
+  margin: 10px;
+  width: 120px;
+}
+
+@keyframes imgk{
+  0%{
+    position: absolute;
+    top: -50px;
+  }
+  100%{
+    position: absolute;
+    top: -8px;
+  }
+}
+@keyframes imgk2{
+  0%{
+    position: absolute;
+    top: -8px;
+  }
+  40%{
+    position: absolute;
+    top: -8px;
+  }
+  50%{
+    position: absolute;
+    top: 5px;
+  }
+  60%{
+    position: absolute;
+    top: -8px;
+  }
+  70%{
+    position: absolute;
+    top: 5px;
+  }
+  100%{
+    position: absolute;
+    top: -8px;
+  }
+}
+
+.crose_user_info {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 10px;
+  font-size: 35px;
+  color: red;
+}
+
+.clear {
+  width: 100px;
+}
+.info_cross {
+  position: absolute;
+  margin: 30px;
+  top: 0;
+  right: 5px;
+  font-weight: bolder;
+  font-size: 40px;
+}
+.ontap{
+  animation: uu 1s ease infinite;
+}
+@keyframes uu {
+  0%{
+    background:  #25ff25;
+  }
+  50%{
+    background: green;
+  }
+  100%{
+    background: #25ff25;
+  }
+}
+.play:hover {
+  background: red;
+  color: #fff;
+}
+.play {
+  animation: ff 1s ease infinite;
+}
+@keyframes ff {
+  0%{
+    background: red;
+    color: #fff;
+  }
+  100%{
+    background: #fff;
+    color:red;
+  }
+}
+button {
+  background: none;
+}
+</style>
+
+  <title>Test </title>
+</head>
+<body>
+ 
+  <!--    body        -->
+
+    <div class="mobile_area">
+     
+       <div class="info_input">
+           <h1>Sign up</h1>
+           <div class="kkk">
+           <img class="iclick" src="user.png" alt="">
+           <h3 class="camera">📷</h3>
+             
+           </div>
+           <input type="file" class="input" value="" hidden/>
+       <div class="info_input_mid">
+         <form action="" method="post" accept-charset="utf-8" name="google-sheet" onsubmit="submitform(event)">
+           <input class="user_name_input" type="text" value="" name="name" placeholder="Enter your Name" required/>
+           <input class="" type="email" value="" name="email" placeholder="Enter your Email" required/>
+           <br>
+           <input class="user_password_input" type="password" value="" name="pass" placeholder="Password" required/>
+           <br />
+           <button type="submit">Submit</button>
+            </form>
+       </div>
+       </div>
+          
+          
+       <img class="img_click" src="user.png" alt="">
+      <div class="slider_user_info">
+        <h1 class="crose_user_info">&times;</h1>
+       <br />
+          <img class="slider_img" src="user.png" alt="">
+        
+         <br>
+          <h1 class="slider_name">Player</h1>
+        
+          <br>
+          <h1>Label <span class="lll_conplet">1</span><br /></h1>
+          
+           <br>
+           <input class="clearr" type="submit" value="Clear">
+           <br>
+          <input class="updated" type="submit" value="Update">
+       <h6>Powered by <br> MASUM</h6>
+      </div>
+   
+      
+      
+      <!--    here all content        -->
+      <div class="label">
+        <div class="show_labal">
+          <h1>Labels</h1>
+        </div>
+        <div class="section">
+          <section>
+            <span>#</span>
+            <span>#</span>
+            <span>#</span>
+          </section>
+          <section>
+            <span>#</span>
+            <span>#</span>
+            <span>#</span>
+          </section>
+          <h6>Powered by MASUM</h6>
+        </div>
+        
+      </div>
+          <div class="info_box">
+            <h1 class="info_cross">&times;</h1>
+            <h1>Find and Click me</h1>
+            <img src="sad.jpg" alt="">
+            <h2 style="font-size:30px;">Label <span class="info_label">1</span></h2>
+             <h1>You have to <span class="info_scores">00</span> scores in <span class="info_moves">00</span> moves</h1>
+          
+            <button class="skip" type="submit">Skip</button>
+              
+            <h6>Powered by MASUM</h6>
+          </div>
+        <div class="all_section">
+          <div class="lbl_div">
+            <h1>Label <span>1</span></h1>
+          </div>
+          <div class="under_score">
+    <h1>Moves:<span class="movess">00</span></h1>
+            <h1><span class="scores">00</span>:Score</h1>
+          </div>
+          
+        <section class="section1">
+          <img src="happy.jpg" alt="" />
+          <img src="happy.jpg" alt="" />
+          <img src="happy.jpg" alt="" />
+          <img src="happy.jpg" alt="" />
+        </section>
+        <section class="section2">
+          <img src="happy.jpg" alt="" />
+          <img src="happy.jpg" alt="" />
+          <img src="happy.jpg" alt="" />
+          <img src="happy.jpg" alt="" />
+        </section>
+        <section class="section3">
+          <img src="happy.jpg" alt="" />
+          <img src="happy.jpg" alt="" />
+          <img src="happy.jpg" alt="" />
+          <img src="happy.jpg" alt="" />
+        </section>
+        <section class="section4">
+          <img src="happy.jpg" alt="" />
+          <img src="happy.jpg" alt="" />
+          <img src="happy.jpg" alt="" />
+          <img src="happy.jpg" alt="" />
+        </section>
+        <section class="section5">
+          <img src="happy.jpg" alt="" />
+          <img src="happy.jpg" alt="" />
+          <img src="happy.jpg" alt="" />
+          <img src="happy.jpg" alt="" />
+        </section>
+        
+          <h1 class="count">3</h1>
+        
+        <div class="btn_board">
+          <button class="again" type="submit">Again</button>
+          <button class="play" type="submit">Play</button>
+          <button class="quiet" type="submit">Quiet</button>
+        </div>
+            <h6 style="text-align:center;">Powered by MASUM</h6>
+        </div>
+      
+ 
+      
+      <div class="result_box">
+        <div class="user_info">
+          <img class="result_img" src="user.png" alt="" />
+          <h1>Hey <span class="result_name">Player</span></h1>
+        </div>
+        <div class="score_text">
+          <h1>Moves: <span class="result_move">00</span></h1>
+          <h1>Score: <span class="result_score">00</span> of <span class="score_main">00</span></h1>
+          <h1 class="won_text" style=" font-size: 50px;margin: 5px;color: rgb(242,0,255);"></h1>
+          <h2 style="color:red;">Label <span class="result_label"></span> <span class="complete_text"></span></h2>
+          
+        </div>
+    
+        <div class="result_btn">
+          <button class="result_again" type="submit">Again</button>
+          <button class="result_quet" type="submit">Quiet</button>
+          <button class="result_next" type="submit">Next</button>
+        </div>
+          <h6 style="text-align:center;">Powered by MASUM</h6>
+      </div>
+    </div>
+  
+  
+  
+     
+  
+  <!--     end body       -->
+  <!--    javascript        -->
+  <script type="text/javascript" charset="utf-8">
+    
+const allBox = document.querySelectorAll(".all_section section img");
+const count = document.querySelector(".count");
+const allLabel = document.querySelectorAll(".label section span");
+const scores = document.querySelector(".scores");
+const movess = document.querySelector(".movess");
+const under_score = document.querySelector(".under_score");
+const clearr = document.querySelector(".clearr");
+const result_next = document.querySelector(".result_next");
+const won_text = document.querySelector(".won_text");
+const won_text_h1 = document.querySelector(".won_text h1");
+const result_box = document.querySelector(".result_box");
+const section1 = document.querySelector(".section1");
+const section2 = document.querySelector(".section2");
+const section3 = document.querySelector(".section3");
+const section4 = document.querySelector(".section4");
+const section5 = document.querySelector(".section5");
+const all_section = document.querySelector(".all_section");
+const label = document.querySelector(".label");
+const label_name = document.querySelector(".lbl_div h1 span");
+const play = document.querySelector(".play");
+const quiet = document.querySelector(".quiet");
+const again = document.querySelector(".again");
+const result_name = document.querySelector(".result_name");
+const info_cross = document.querySelector(".info_cross");
+const result_move = document.querySelector(".result_move");
+const result_score = document.querySelector(".result_score");
+const score_main = document.querySelector(".score_main");
+const complete_text = document.querySelector(".complete_text");
+const result_label = document.querySelector(".result_label");
+const result_again = document.querySelector(".result_again");
+const clear = document.querySelector(".clear");
+const info_moves = document.querySelector(".info_moves");
+const info_scores = document.querySelector(".info_scores");
+const result_quet = document.querySelector(".result_quet");
+const info_box = document.querySelector(".info_box");
+const skip = document.querySelector(".skip");
+const info_label = document.querySelector(".info_label");
+const img_click = document.querySelector(".img_click");
+const crose_user_info = document.querySelector(".crose_user_info");
+const slider_user_info = document.querySelector(".slider_user_info");
+const user_password_input = document.querySelector(".user_password_input");
+const user_name_input = document.querySelector(".user_name_input");
+const info_input = document.querySelector(".info_input");
+const slider_name = document.querySelector(" .slider_name");
+const lll_conplet = document.querySelector(" .lll_conplet");
+const updated = document.querySelector(" .updated");
+const input = document.querySelector(" .input");
+const iclick = document.querySelector(" .iclick");
+const camera = document.querySelector(" .camera");
+const result_img = document.querySelector(" .result_img");
+const slider_img = document.querySelector(" .slider_img");
+let Name_user = localStorage.getItem("Name");
+let Pass_user = localStorage.getItem("Password");
+let User_img = localStorage.getItem("User_img");
+let ani = localStorage.getItem("anima");
+if (User_img) {
+  img_click.src = User_img;
+  result_img.src = User_img;
+  slider_img.src = User_img;
+}
+
+
+window.onload=()=>{
+    valud();
+    if (label1) {
+      console.log();
+    }
+    else {
+  localStorage.setItem("label1" ,"true");
+    }
+  };
+
+input.addEventListener("change", function(){
+  file = this.files[0];
+  showFile();
+});
+iclick.onclick = ()=>{ 
+  input.click();
+};
+camera.onclick = ()=>{ 
+  input.click();
+};
+
+
+function showFile(){
+  let fileType = file.type;
+  let validExtensions = ["image/jpeg", "image/jpg", "image/png"];
+  if(validExtensions.includes(fileType)){ 
+    let fileReader = new FileReader(); 
+    fileReader.onload = ()=>{
+      let fileURL = fileReader.result;
+    localStorage.setItem("User_img" ,fileURL);
+    iclick.src = fileURL;
+    }
+    fileReader.readAsDataURL(file);
+  }
+  else{
+    alert("This is not an Image File!");
+  }
+}
+
+function submitform(e) {
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbygawTwQgAsEZAu4FWxTd1uh42rEpa3AXaJA0NLkjlByKLdRX4Z4JU7LemphE8pzZgSKQ/exec'
+            const form = document.forms['google-sheet']
+  
+  e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response =>{ alert("Thanks for Contacting us..! We Will Contact You Soon...");
+  let user_name =document.forms["google-sheet"]["name"].value;
+let user_pass =document.forms["google-sheet"]["pass"].value;
+localStorage.setItem("Name" , user_name);
+localStorage.setItem("Password" , user_pass);
+info_input.style.display = "none";
+window.location.reload();
+                  
+                  
+                })
+                .catch(error => console.error('Error!', error.message))
+        
+          
+}
+
+user_name_input.oninput=()=>{
+  let input = user_name_input.value;
+  let input_l = input.length;
+  if (input_l> 0 && input_l < 10) {
+   user_name_input.style.border="1px solid green"
+  }
+
+  else{
+   user_name_input.style.border="1px solid red"
+   user_name_input.value= "";
+   alert("Please! Enter you short name");
+  }
+};
+user_password_input.oninput=()=>{
+  let input = user_password_input.value;
+  let input_l = input.length;
+  if (input_l >= 4 && input_l <= 8) {
+   user_password_input.style.border="1px solid green"
+  }
+  else{
+   user_password_input.style.border="1px solid red"
+ 
+  }
+};
+
+function valud() {
+  let nn = localStorage.getItem("Name");
+  if (nn) {
+   info_input.style.display = "none";
+   img_click.style.display = "block";
+   label.style.display = "block";
+  }
+  else{
+    info_input.style.display = "block";
+    img_click.style.display = "none";
+  }
+}
+
+
+
+img_click.onclick = ()=>{  
+  lll_ch3ck();
+  slider_name.textContent = Name_user;
+  slider_user_info.classList.add("act");
+  setTimeout(function() {
+    
+  slider_user_info.classList.remove("act");
+  }, 5000);
+crose_user_info.onclick = ()=>{  
+  slider_user_info.classList.remove("act");
+};
+
+label.onclick = ()=>{ 
+  slider_user_info.classList.remove("act");
+  img_click.style.display = "none";
+};
+localStorage.setItem("anima","true");
+img_click.classList.remove("active");
+};
+result_name.textContent = Name_user;
+
+  
+
+  let label1= localStorage.getItem("label1");
+  let label2= localStorage.getItem("label2");
+  let label3= localStorage.getItem("label3");
+  let label4= localStorage.getItem("label4");
+  let label5= localStorage.getItem("label5");
+  let label6= localStorage.getItem("label6");
+ 
+ 
+  function lll_ch3ck() {
+    
+    if (label6) {
+      lll_conplet.textContent = "6";
+    }
+    else {
+      if (label5) {
+        lll_conplet.textContent = "5";
+      }
+      else {
+        if (label4) {
+          lll_conplet.textContent = "4";
+        }
+        else {
+          if (label3) {
+            lll_conplet.textContent = "3";
+          }
+          else {
+            if (label2) {
+              lll_conplet.textContent = "2";
+            }
+            else {
+              lll_conplet.textContent = "1";
+            }
+          }
+        }
+
+      }
+    }
+    
+  }
+  
+  updated.onclick = ()=>{   
+    let promp = prompt("Enter Your Password");
+    if (promp == Pass_user) {
+    localStorage.setItem("Name" , "");
+    localStorage.setItem("User_img" , "user.png");
+    window.location.reload();
+    }
+    else {
+   console.log(Pass_user);
+      alert("Wrong Password!");
+    }
+  };
+  
+  clearr.onclick=()=>{
+   let al = alert("Are you sure that want to clear all LEVELS?");
+   let pr = prompt("Enter your password");
+   if (pr == Pass_user) {
+   localStorage.setItem("Name" , "");
+   localStorage.setItem("User_img" , "user.png");
+   localStorage.setItem("anima" , "");
+   localStorage.setItem("label6","");localStorage.setItem("label5","");localStorage.setItem("label4","");localStorage.setItem("label3","");localStorage.setItem("label2","");window.location.reload();
+   }
+   else {
+      alert("Wrong Password!");
+    }
+   }
+   
+   animation();
+  function animation() {
+    if (ani) {
+      
+    }
+    else {
+      img_click.classList.add("active");
+    }
+  }
+  
+   
+let score = 0;
+let moves = 0;
+let countdown = 3;
+labal_fun();
+function labal_fun() {
+  for (var i = 0; i < allLabel.length; i++) {
+ allLabel[i].style.pointerEvents = "none";
+ 
+ 
+ if (label1) {
+ allLabel[0].style.background = "green";
+ allLabel[0].style.pointerEvents = "auto";
+ allLabel[0].textContent = "1";
+ allLabel[0].classList.add("ontap");
+ }
+ if (label2) {
+ allLabel[1].style.background = "green";
+ allLabel[1].style.pointerEvents = "auto";
+ allLabel[1].textContent = "2";
+ allLabel[0].classList.remove("ontap");
+ allLabel[1].classList.add("ontap");
+ }
+ if (label3) {
+ allLabel[2].style.background = "green";
+ allLabel[2].style.pointerEvents = "auto";
+ allLabel[2].textContent = "3";
+ allLabel[1].classList.remove("ontap");
+ allLabel[2].classList.add("ontap");
+ }
+ if (label4) {
+ allLabel[3].style.background = "green";
+ allLabel[3].style.pointerEvents = "auto";
+ allLabel[3].textContent = "4";
+ allLabel[2].classList.remove("ontap");
+ allLabel[3].classList.add("ontap");
+ }
+ if (label5) {
+ allLabel[4].style.background = "green";
+ allLabel[4].style.pointerEvents = "auto";
+ allLabel[4].textContent = "5";
+ allLabel[3].classList.remove("ontap");
+ allLabel[4].classList.add("ontap");
+ }
+ if (label6) {
+ allLabel[5].style.background = "green";
+ allLabel[5].style.pointerEvents = "auto";
+ allLabel[5].textContent = "6";
+ allLabel[4].classList.remove("ontap");
+ allLabel[5].classList.add("ontap");
+ }
+ 
+
+    allLabel[0].onclick = ()=>{ 
+      info_moves.textContent = "20";
+      info_scores.textContent = "18";
+      score_main.textContent = "18";
+      section4.style.display = "none";
+      section5.style.display = "none";
+      label.style.display = "none";
+      label_name.textContent= "1";
+      info_label.textContent= "1";
+      img_click.style.display= "none";
+      info_box.style.display = "block";
+      skip.onclick = ()=>{ 
+      info_box.style.display = "none";
+      all_section.style.display = "block";
+        
+      play.onclick = ()=>{ 
+        cown_fun();
+        
+        setTimeout(function() {
+      game_fun1();
+  play.style.display = "none";
+  quiet.style.display = "flex";
+  again.style.display = "flex";
+  result_label.textContent = "1";
+   }, 3000);
+};
+
+      };
+      
+     // 
+    };
+    
+    allLabel[1].onclick = ()=>{ 
+      info_moves.textContent = "20";
+      info_scores.textContent = "18";
+      score_main.textContent = "18";
+      section4.style.display = "none";
+  section5.style.display = "none";
+      label.style.display = "none";
+      label_name.textContent= "2";
+      info_label.textContent= "2";
+      img_click.style.display= "none";
+      info_box.style.display = "block";
+      skip.onclick = ()=>{ 
+      info_box.style.display = "none";
+      all_section.style.display = "block";
+      play.onclick = ()=>{ 
+        cown_fun();
+        
+        setTimeout(function() {
+      game_fun2();
+  play.style.display = "none";
+  quiet.style.display = "flex";
+  again.style.display = "flex";
+  result_label.textContent = "2";
+   }, 3000);
+};
+    };
+    
+    };
+    allLabel[2].onclick = ()=>{
+      info_moves.textContent = "15";
+      info_scores.textContent = "26";
+      score_main.textContent = "26";
+     img_click.style.display= "none";
+      section5.style.display = "none";
+      label.style.display = "none";
+      label_name.textContent= "3";
+      info_label.textContent= "3";
+      info_box.style.display = "block";
+      skip.onclick = ()=>{ 
+      info_box.style.display = "none";
+      all_section.style.display = "block";
+      play.onclick = ()=>{ 
+        cown_fun();
+        
+        setTimeout(function() {
+      game_fun3();
+  play.style.display = "none";
+  quiet.style.display = "flex";
+  again.style.display = "flex";
+  result_label.textContent = "3";
+   }, 3000);
+};
+    };
+    };
+    allLabel[3].onclick = ()=>{ 
+      info_moves.textContent = "15";
+      info_scores.textContent = "40";
+      score_main.textContent = "40";
+     img_click.style.display= "none";
+      label.style.display = "none";
+      label_name.textContent= "4";
+      info_label.textContent= "4";
+      info_box.style.display = "block";
+      skip.onclick = ()=>{ 
+      info_box.style.display = "none";
+      all_section.style.display = "block";
+      play.onclick = ()=>{ 
+        cown_fun();
+        
+        setTimeout(function() {
+      game_fun4();
+  play.style.display = "none";
+  quiet.style.display = "flex";
+  again.style.display = "flex";
+  result_label.textContent = "4";
+   }, 3000);
+};
+    };
+    };
+    allLabel[4].onclick = ()=>{
+      info_moves.textContent = "15";
+      info_scores.textContent = "42";
+      score_main.textContent = "42";
+    img_click.style.display= "none";
+      label.style.display = "none";
+      label_name.textContent= "5";
+      info_label.textContent= "5";
+     info_box.style.display = "block";
+      skip.onclick = ()=>{ 
+      info_box.style.display = "none";
+      all_section.style.display = "block";
+      play.onclick = ()=>{ 
+        cown_fun();
+        
+        setTimeout(function() {
+      game_fun5();
+  play.style.display = "none";
+  quiet.style.display = "flex";
+  again.style.display = "flex";
+  result_label.textContent = "5";
+   }, 3000);
+};
+    };
+    };
+    allLabel[5].onclick = ()=>{
+      info_moves.textContent = "16";
+      info_scores.textContent = "60";
+      score_main.textContent = "60";
+img_click.style.display= "none";
+      label.style.display = "none";
+      label_name.textContent= "6";
+      info_label.textContent= "6";
+     info_box.style.display = "block";
+      skip.onclick = ()=>{ 
+      info_box.style.display = "none";
+      all_section.style.display = "block";
+     play.onclick = ()=>{ 
+        cown_fun();
+        
+        setTimeout(function() {
+      game_fun6();
+  play.style.display = "none";
+  quiet.style.display = "flex";
+  again.style.display = "flex";
+  result_label.textContent = "6";
+   }, 3000);
+};
+    };
+    
+  }
+  }
+  
+}
+
+
+function cown_fun() {
+all_section.style.pointerEvents = "none";
+  count.style.display = "block";
+  cownn = setInterval( mm , 1000);
+  function mm() {
+  countdown--;
+    count.textContent = countdown;
+    
+    if (countdown == 0) {
+      countdown+=4;
+      count.style.display = "none";
+      setTimeout(function() {
+     all_section.style.pointerEvents = "auto";
+      clearInterval(cownn);
+      
+        
+      }, 1000);
+    }
+  }
+}
+
+
+function game_fun1(){
+  // 20
+  // 18
+  counter = setInterval( gameFun , 1400)
+  function gameFun() {
+    let random = Math.floor(Math.random() * 12) ;
+   
+    moves++;
+    for (var i = 0; i < allBox.length; i++) {
+      allBox[random].src = "sad.jpg";
+      allBox[i].onclick = ()=>{  
+        score--;
+       
+      };
+      
+      allBox[random].onclick = ()=>{ 
+        score++;
+    
+        };
+        
+    setTimeout(function() {
+        allBox[random].src = "happy.jpg";
+    }, 1000);
+    
+    }// for fun
+    scores.textContent = score;
+    movess.textContent = moves;
+    result_score.textContent = score;
+    result_move.textContent = moves;
+   
+   if (moves > 19 ) {
+     won_text.textContent = "You Lose!";
+      complete_text.textContent = "uncomplete!";
+      clearInterval(counter);
+      if (score >= 18) {
+      won_text.textContent = "You Win!";
+      complete_text.textContent = "completed!";
+   localStorage.setItem("label2" ,"true");
+        
+      }
+      setTimeout(function() {
+      coming_result();
+      }, 1000);
+    }
+   
+  }// for time out fun
+     
+
+
+    again.onclick = ()=>{  
+  score = score -score;
+  moves = moves - moves;
+  scores.textContent = score;
+  movess.textContent = moves;
+  clearInterval(counter);
+  cown_fun();
+  setTimeout(function() {
+  counter = setInterval( gameFun , 1400);
+  }, 3000);
+};
+    result_again.onclick = ()=>{ 
+      result_box.style.display = "none";
+      all_section.style.display = "block";
+      again.click();
+    };
+    
+  }
+  
+
+function game_fun2(){
+  // 20 18
+  counter = setInterval( gameFun , 1100)
+  function gameFun() {
+    let random = Math.floor(Math.random() * 12) ;
+    moves++;
+    for (var i = 0; i < allBox.length; i++) {
+      allBox[random].src = "sad.jpg";
+  
+     
+      allBox[i].onclick = ()=>{  
+        score--;
+       
+      };
+      allBox[random].onclick = ()=>{ 
+        score++;
+    
+        };
+    
+    setTimeout(function() {
+        allBox[random].src = "happy.jpg";
+      
+    }, 1000);
+    }// for
+    scores.textContent = score;
+    movess.textContent = moves;
+    result_score.textContent = score;
+    result_move.textContent = moves;
+    
+     if (moves > 19 ) {
+       won_text.textContent = "You Lose!";
+      complete_text.textContent = "uncomplete!";
+      clearInterval(counter);
+    if (score >= 18) {
+      won_text.textContent = "You Win!";
+      complete_text.textContent = "completed!";
+     localStorage.setItem("label3" ,"true");
+    }
+      
+   setTimeout(function() {       coming_result();       }, 1000);
+      
+    }
+  }// tier
+    again.onclick = ()=>{  
+  score = score -score;
+  moves = moves - moves;
+  scores.textContent = score;
+  movess.textContent = moves;
+  clearInterval(counter);
+  cown_fun();
+  setTimeout(function() {
+  counter = setInterval( gameFun , 1100);
+  }, 3000);
+};
+result_again.onclick = ()=>{ 
+      result_box.style.display = "none";
+      all_section.style.display = "block";
+      again.click();
+    };
+   
+  }
+
+
+
+
+
+function game_fun3(){
+  // 15 26
+  counter = setInterval( gameFun , 1100)
+  function gameFun() {
+    let random = Math.floor(Math.random() * 16) ;
+    let random1 = Math.floor(Math.random() * 16) ;
+  function match() {
+   if (random == random1) {
+     score++;
+   }
+  }
+    
+    moves++;
+    for (var i = 0; i < allBox.length; i++) {
+      allBox[random].src = "sad.jpg";
+      allBox[random1].src = "sad.jpg";
+  
+      allBox[i].onclick = ()=>{  
+        score--;
+      };
+      allBox[random].onclick = ()=>{ 
+        score++;
+       match();
+    
+        };
+      allBox[random1].onclick = ()=>{ 
+        score++;
+        };
+    
+    
+    setTimeout(function() {
+        allBox[random].src = "happy.jpg";
+        allBox[random1].src = "happy.jpg";
+    }, 1000);
+  }// for
+    scores.textContent = score;
+    movess.textContent = moves;
+    result_score.textContent = score;
+    result_move.textContent = moves;
+       if (moves > 14 ) {
+         won_text.textContent = "You Lose!";
+      complete_text.textContent = "uncomplete!";
+      clearInterval(counter);
+      if (score >= 26) {
+        won_text.textContent = "You Win!";
+      complete_text.textContent = "completed!";
+     localStorage.setItem("label4" ,"true");
+      }
+        
+   setTimeout(function() {       coming_result();       }, 1000);
+    }
+}
+    again.onclick = ()=>{  
+  score = score -score;
+  moves = moves - moves;
+  scores.textContent = score;
+  movess.textContent = moves;
+  clearInterval(counter);
+  cown_fun();
+  setTimeout(function() {
+  counter = setInterval( gameFun , 1100);
+  }, 3000);
+};
+    result_again.onclick = ()=>{ 
+      result_box.style.display = "none";
+      all_section.style.display = "block";
+      again.click();
+    };
+ 
+    
+  
+  
+}
+function game_fun4(){
+  // 15 40
+  counter = setInterval( gameFun , 1300)
+  function gameFun() {
+    let random = Math.floor(Math.random() * 20) ;
+    let random1 = Math.floor(Math.random() * 20) ;
+    let random2 = Math.floor(Math.random() * 20) ;
+   
+    moves++;
+    function match1() {
+      if ((random == random1)||(random == random2)||(random == random1 == random2) ){
+        score++;
+      }
+    }
+    function match2() {
+      if (random2 == random1){
+        score++;
+      }
+    }
+    
+    
+    for (var i = 0; i < allBox.length; i++) {
+      allBox[random].src = "sad.jpg";
+      allBox[random1].src = "sad.jpg";
+      allBox[random2].src = "sad.jpg";
+      allBox[i].onclick = ()=>{  
+        score--;
+       
+      };
+      allBox[random].onclick = ()=>{ 
+        score++;
+        match1();
+        };
+      allBox[random1].onclick = ()=>{ 
+        score++;
+        match2();
+        };
+    
+      allBox[random2].onclick = ()=>{ 
+        score++;
+       
+        };
+    
+    
+    setTimeout(function() {
+     
+        allBox[random].src = "happy.jpg";
+        allBox[random1].src = "happy.jpg";
+        allBox[random2].src = "happy.jpg";
+       
+    }, 1200);
+    }// for
+    scores.textContent = score;
+    movess.textContent = moves;
+    result_score.textContent = score;
+    result_move.textContent = moves;
+    if (moves > 14) {
+      won_text.textContent = "You Lose!";
+      complete_text.textContent = "uncomplete!";
+      clearInterval(counter);
+     if (score >= 40) {
+       won_text.textContent = "You Win!";
+      complete_text.textContent = "completed!";
+     localStorage.setItem("label5" ,"5");
+     }
+       
+   setTimeout(function() {       coming_result();       }, 1000);
+    }
+  }
+    again.onclick = ()=>{  
+  score = score -score;
+  moves = moves - moves;
+  scores.textContent = score;
+  movess.textContent = moves;
+  clearInterval(counter);
+  cown_fun();
+  setTimeout(function() {
+  counter = setInterval( gameFun , 1300);
+  }, 3000);
+};
+    result_again.onclick = ()=>{ 
+      result_box.style.display = "none";
+      all_section.style.display = "block";
+      again.click();
+    };
+    
+    
+  }
+
+function game_fun5(){
+  // 15 42
+  counter = setInterval( gameFun , 1100)
+  function gameFun() {
+    let random = Math.floor(Math.random() * 20) ;
+    let random1 = Math.floor(Math.random() * 20) ;
+    let random2 = Math.floor(Math.random() * 20) ;
+  
+    moves++;
+    function match1() {
+      if ((random == random1)||(random == random2)||(random == random1 == random2) ){
+        score++;
+      }
+    }
+    function match2() {
+      if (random2 == random1){
+        score++;
+      }
+    }
+    
+    
+    for (var i = 0; i < allBox.length; i++) {
+      allBox[random].src = "sad.jpg";
+      allBox[random1].src = "sad.jpg";
+      allBox[random2].src = "sad.jpg";
+   
+      allBox[i].onclick = ()=>{  
+        score--;
+       
+      };
+      allBox[random].onclick = ()=>{ 
+        score++;
+        match1();
+        };
+      allBox[random1].onclick = ()=>{ 
+        score++;
+      match2();
+        };
+    
+      allBox[random2].onclick = ()=>{ 
+        score++;
+       
+        };
+    
+    
+    setTimeout(function() {
+        allBox[random].src = "happy.jpg";
+        allBox[random1].src = "happy.jpg";
+        allBox[random2].src = "happy.jpg";
+       
+    }, 1000);
+    }// for
+    scores.textContent = score;
+    movess.textContent = moves;
+    result_score.textContent = score;
+    result_move.textContent = moves;
+if (moves > 14 ) {
+  won_text.textContent = "You Lose!";
+      complete_text.textContent = "uncomplete!";
+      clearInterval(counter);
+      if (score >= 42) {
+        won_text.textContent = "You Win!";
+      complete_text.textContent = "completed!";
+     localStorage.setItem("label6" ,"true");
+      }
+        
+   setTimeout(function() {       coming_result();       }, 1000);
+  
+    }
+}
+    again.onclick = ()=>{  
+  score = score -score;
+  moves = moves - moves;
+  scores.textContent = score;
+  movess.textContent = moves;
+  clearInterval(counter);
+  cown_fun();
+  setTimeout(function() {
+  counter = setInterval( gameFun , 1100);
+  }, 3000);
+};
+    result_again.onclick = ()=>{ 
+      result_box.style.display = "none";
+      all_section.style.display = "block";
+      again.click();
+    };
+    
+    
+  }
+
+function game_fun6(){
+  // 16 60
+  counter = setInterval( gameFun , 1100)
+  function gameFun() {
+    let random = Math.floor(Math.random() * 20) ;
+    let random1 = Math.floor(Math.random() * 20) ;
+    let random2 = Math.floor(Math.random() * 20) ;
+    let random3 = Math.floor(Math.random() * 20) ;
+    moves++;
+    
+    function match1() {
+      if ((random == random1)||(random == random3)||(random == random2)||(random == random1 == random2) ){
+        score++;
+      }
+    }
+    function match2() {
+      if ((random3 == random1)||(random2 == random1)){
+        score++;
+      }
+    }
+    function match3() {
+      if (random3 == random2){
+        score++;
+      }
+    }
+    
+    for (var i = 0; i < allBox.length; i++) {
+      allBox[random].src = "sad.jpg";
+      allBox[random1].src = "sad.jpg";
+      allBox[random2].src = "sad.jpg";
+      allBox[random3].src = "sad.jpg";
+      allBox[i].onclick = ()=>{  
+        score--;
+       
+      };
+      allBox[random].onclick = ()=>{ 
+        score++;
+    match1();
+        };
+      allBox[random1].onclick = ()=>{ 
+        score++;
+      match2();
+        };
+      allBox[random3].onclick = ()=>{ 
+        score++;
+        
+        };
+      allBox[random2].onclick = ()=>{ 
+        score++;
+       match3();
+        };
+    
+    
+    setTimeout(function() {
+      
+        allBox[random].src = "happy.jpg";
+        allBox[random1].src = "happy.jpg";
+        allBox[random2].src = "happy.jpg";
+        allBox[random3].src = "happy.jpg";
+      
+    }, 1000);
+    
+    }// for
+scores.textContent = score;
+    movess.textContent = moves;
+    result_score.textContent = score;
+    result_move.textContent = moves;
+    if (moves >15) {
+      clearInterval(counter);
+      
+      setTimeout(function() {       coming_result();       }, 1000);
+    }
+}
+    again.onclick = ()=>{  
+  score = score -score;
+  moves = moves - moves;
+  scores.textContent = score;
+  movess.textContent = moves;
+  clearInterval(counter);
+  cown_fun();
+  setTimeout(function() {
+  counter = setInterval( gameFun , 1100);
+  }, 3000);
+};
+    result_again.onclick = ()=>{ 
+      result_box.style.display = "none";
+      all_section.style.display = "block";
+      again.click();
+    };
+    
+    
+  }
+
+function coming_result() {
+  setTimeout(function() {
+  result_box.style.display = "block";
+  all_section.style.display = "none";
+    
+  }, 1000);
+}
+
+   
+ 
+result_next.onclick = ()=>{  
+  window.location.reload();
+};
+info_cross.onclick = ()=>{  
+  window.location.reload();
+};
+quiet.onclick = ()=>{ 
+  window.location.reload();
+  
+};
+result_quet.onclick = ()=>{ 
+  quiet.click();
+  
+};
+
+
+
+  </script>
+</body>
+</html>
