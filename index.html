@@ -684,16 +684,7 @@ button {
   <!--     end body       -->
   <!--    javascript        -->
   <script type="text/javascript" charset="utf-8">
-    if (Notification.permission === "default") {
-  
-Notification.requestPermission();
-}
-if (Notification.permission === "granted") {
-  alert(success);
-}
-if (Notification.permission === "denied") {
-  alert(fall);
-}
+   
 const allBox = document.querySelectorAll(".all_section section img");
 const count = document.querySelector(".count");
 const allLabel = document.querySelectorAll(".label section span");
